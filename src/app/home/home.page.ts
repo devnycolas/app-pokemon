@@ -61,7 +61,7 @@ export class HomePage implements OnInit {
   }
 
   openDetails(pokemon: any) {
-    this.router.navigate(['/pokemon-detail', pokemon.name]);
+    this.router.navigate(['/pokemon-details', pokemon.name]);
   }
 
   filterPokemons() {

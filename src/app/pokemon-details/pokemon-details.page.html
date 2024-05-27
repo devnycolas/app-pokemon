@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalhes do Pokémon</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="pokemon-container" *ngIf="pokemon">
+    <ion-card class="pokemon-card">
+      <div class="pokemon-info">
+        <div class="pokemon-image">
+          <ion-card-header>
+            <ion-card-title class="customColorText">{{ pokemon.name | titlecase }}</ion-card-title>
+          </ion-card-header>
+          <ion-img [src]="getPokemonImage(pokemon)" alt="Pokemon Image"></ion-img>
+        </div>
+        <div class="pokemon-details">
+          <ion-card-content class="customColorText">
+            <p>HP: {{ pokemon.hp }}</p>
+            <p>Attack: {{ pokemon.attack }}</p>
+            <p>Defense: {{ pokemon.defense }}</p>
+            <p>Special Attack: {{ pokemon.special_attack }}</p>
+            <p>Special Defense: {{ pokemon.special_defense }}</p>
+            <p>Speed: {{ pokemon.speed }}</p>
+          </ion-card-content>
+        </div>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

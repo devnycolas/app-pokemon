@@ -1,0 +1,74 @@
+@font-face {
+    font-family: textFont;
+    /* src: url(../fonts/Grotesk-Light.ttf); */
+    src: url(../../assets/fonts/Comfortaa-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: titleFont;
+    src: url(../../assets/fonts/monasgrotesk-bold.ttf);
+  }
+
+.pokemon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+    
+.pokemon-card {
+    width: 600px;
+    max-width: 600px;
+}
+    
+.pokemon-info {
+    display: flex;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+    
+.pokemon-image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+    
+.pokemon-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    padding: 20px;
+  }
+
+.pokemon-details p {
+    margin-bottom: 5px;
+    font-family: textFont;
+    font-size: 16px;
+}
+    
+.pokemon-details ion-card-header {
+    text-align: center;
+}
+    
+.pokemon-details ion-card-content {
+    padding-top: 0;
+}
+
+.pokemon-details p {
+    margin-bottom: 5px;
+}
+
+.customColorText {
+    color: black;
+}
+
+ion-card-title { 
+    font-family: textFont;
+    font-size: 24px;
+    text-transform: initial;
+}
+    
