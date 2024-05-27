@@ -1,0 +1,38 @@
+ion-header {
+    ion-toolbar {
+      background: #6200ea;
+      color: white;
+    }
+  }
+  
+  ion-card {
+    text-align: center;
+    margin: 10px;
+  
+    ion-img {
+      max-width: 120px;
+      margin: 0 auto;
+    }
+  
+    ion-card-header {
+      padding: 5px;
+    }
+  
+    ion-card-title {
+      font-size: 1.2em;
+    }
+  
+    ion-card-content {
+      font-size: 0.9em;
+    }
+  }
+  
+  ion-content {
+    .spinner-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
